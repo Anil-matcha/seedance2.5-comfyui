@@ -1,0 +1,134 @@
+{
+  "last_node_id": 7,
+  "last_link_id": 7,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Seedance25ApiKey",
+      "pos": [40, 520],
+      "size": {"0": 300, "1": 80},
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [{"name": "api_key", "type": "STRING", "links": [1, 3], "slot_index": 0}],
+      "properties": {"Node name for S&R": "Seedance25ApiKey"},
+      "widgets_values": [""]
+    },
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": [40, 80],
+      "size": {"0": 300, "1": 130},
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {"name": "IMAGE", "type": "IMAGE", "links": [2], "slot_index": 0},
+        {"name": "MASK", "type": "MASK", "links": null, "slot_index": 1}
+      ],
+      "properties": {"Node name for S&R": "LoadImage"},
+      "widgets_values": ["reference_photo.jpg", "image"]
+    },
+    {
+      "id": 3,
+      "type": "Seedance25Character",
+      "pos": [420, 60],
+      "size": {"0": 400, "1": 280},
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {"name": "api_key", "type": "STRING", "link": 1, "slot_index": 0},
+        {"name": "image_1", "type": "IMAGE", "link": 2, "slot_index": 1}
+      ],
+      "outputs": [
+        {"name": "sheet_image", "type": "IMAGE", "links": [4, 5], "slot_index": 0},
+        {"name": "sheet_url", "type": "STRING", "links": null, "slot_index": 1},
+        {"name": "character_id", "type": "STRING", "links": null, "slot_index": 2}
+      ],
+      "properties": {"Node name for S&R": "Seedance25Character"},
+      "widgets_values": ["A distinctive cyberpunk jacket with neon accents and a glowing visor"]
+    },
+    {
+      "id": 4,
+      "type": "PreviewImage",
+      "pos": [420, 390],
+      "size": {"0": 400, "1": 270},
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [{"name": "images", "type": "IMAGE", "link": 4, "slot_index": 0}],
+      "properties": {"Node name for S&R": "PreviewImage"}
+    },
+    {
+      "id": 5,
+      "type": "Seedance25ConsistentVideo",
+      "pos": [880, 60],
+      "size": {"0": 460, "1": 410},
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {"name": "api_key", "type": "STRING", "link": 3, "slot_index": 0},
+        {"name": "sheet_image", "type": "IMAGE", "link": 5, "slot_index": 1}
+      ],
+      "outputs": [
+        {"name": "video_url", "type": "STRING", "links": [6], "slot_index": 0},
+        {"name": "first_frame", "type": "IMAGE", "links": [7], "slot_index": 1},
+        {"name": "request_id", "type": "STRING", "links": null, "slot_index": 2}
+      ],
+      "properties": {"Node name for S&R": "Seedance25ConsistentVideo"},
+      "widgets_values": [
+        "The character walks through a rain-soaked neon city, cinematic slow motion",
+        "720p",
+        "16:9",
+        "basic",
+        5,
+        true,
+        false,
+        -1,
+        "mp4"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "Seedance25VideoSaver",
+      "pos": [1410, 80],
+      "size": {"0": 360, "1": 170},
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [{"name": "video_url", "type": "STRING", "link": 6, "slot_index": 0}],
+      "outputs": [{"name": "frames", "type": "IMAGE", "links": null, "slot_index": 0}],
+      "properties": {"Node name for S&R": "Seedance25VideoSaver"},
+      "widgets_values": ["seedance25_character", "seedance25_character", 0, 0, 1]
+    },
+    {
+      "id": 7,
+      "type": "PreviewImage",
+      "pos": [880, 540],
+      "size": {"0": 460, "1": 270},
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [{"name": "images", "type": "IMAGE", "link": 7, "slot_index": 0}],
+      "properties": {"Node name for S&R": "PreviewImage"}
+    }
+  ],
+  "links": [
+    [1, 1, 0, 3, 0, "STRING"],
+    [2, 2, 0, 3, 1, "IMAGE"],
+    [3, 1, 0, 5, 0, "STRING"],
+    [4, 3, 0, 4, 0, "IMAGE"],
+    [5, 3, 0, 5, 1, "IMAGE"],
+    [6, 5, 0, 6, 0, "STRING"],
+    [7, 5, 1, 7, 0, "IMAGE"]
+  ],
+  "groups": [
+    {"title": "Step 1 — Generate Character Sheet", "bounding": [20, 30, 830, 680], "color": "#3f789e", "font_size": 14},
+    {"title": "Step 2 — Generate Consistent Video", "bounding": [860, 30, 950, 830], "color": "#3d6b44", "font_size": 14}
+  ],
+  "config": {},
+  "extra": {"ds": {"scale": 0.72, "offset": [0, 0]}},
+  "version": 0.4
+}
