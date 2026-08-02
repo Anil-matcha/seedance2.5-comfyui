@@ -4,6 +4,12 @@ ComfyUI custom nodes for the [Seedance 2.5 API](https://github.com/SamurAIGPT/Se
 
 This pack follows the same workflow pattern as `seedance2-comfyui`: add one API Key node, connect it to a generation node, then connect `video_url` to Save Video and `first_frame` to Preview Image.
 
+## Related Projects
+
+- [MuAPI](https://muapi.ai) — Unified API for running Seedance and other image, video, and audio models. Explore the [Seedance 2.5 landing page](https://muapi.ai/seedance-2.5) or try [Seedance 2.5 text-to-video](https://muapi.ai/playground/seedance-2.5-text-to-video).
+- [Seedance-2.5-API](https://github.com/SamurAIGPT/Seedance-2.5-API) — Python wrapper for the same Seedance 2.5 API.
+- [seedance2-comfyui](https://github.com/Anil-matcha/seedance2-comfyui) — Related Seedance ComfyUI nodes and workflows.
+
 ## Included nodes
 
 | Node | What it does |
