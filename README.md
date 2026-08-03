@@ -4,12 +4,21 @@ ComfyUI custom nodes for the [Seedance 2.5 API](https://github.com/SamurAIGPT/Se
 
 This pack follows the same workflow pattern as `seedance2-comfyui`: add one API Key node, connect it to a generation node, then connect `video_url` to Save Video and `first_frame` to Preview Image.
 
+## 📺 Video Tutorial
+
+[![How to Access Seedance 2.5 API (Step-by-Step Guide)](https://img.youtube.com/vi/Uszlw7H4VP4/maxresdefault.jpg)](https://www.youtube.com/watch?v=Uszlw7H4VP4)
+
+**[How to Access Seedance 2.5 API (Step-by-Step Guide)](https://www.youtube.com/watch?v=Uszlw7H4VP4)** — a full walkthrough of getting an API key and making your first Seedance 2.5 call via [MuAPI](https://muapi.ai/seedance-2.5?utm_source=github&utm_medium=readme&utm_campaign=seedance2.5-comfyui).
+
 ## Related Projects
 
-- [MuAPI](https://muapi.ai) — Unified API for running Seedance and other image, video, and audio models. Explore the [Seedance 2.5 landing page](https://muapi.ai/seedance-2.5) or try [Seedance 2.5 text-to-video](https://muapi.ai/playground/seedance-2.5-text-to-video).
+- [MuAPI ComfyUI integration docs](https://muapi.ai/docs/comfyui) — Integration guidance for running this node pack through MuAPI; create an [access key](https://muapi.ai/access-keys), explore the [Seedance 2.5 landing page](https://muapi.ai/seedance-2.5), or try [Seedance 2.5 text-to-video](https://muapi.ai/playground/seedance-2.5-text-to-video).
 - [Seedance-2.5-API](https://github.com/SamurAIGPT/Seedance-2.5-API) — Python wrapper for the same Seedance 2.5 API.
 - [seedance2-comfyui](https://github.com/Anil-matcha/seedance2-comfyui) — Related Seedance ComfyUI nodes and workflows.
 - [seedance-2.5-mcp](https://github.com/Anil-matcha/seedance-2.5-mcp) — Focused MCP server for driving the 720p and 480p Seedance 2.5 Preview routes.
+- [awesome-seedance-2.5-api-prompts](https://github.com/Anil-matcha/awesome-seedance-2.5-api-prompts) — Curated Seedance 2.5 prompts, camera controls, and API examples.
+- [n8n-nodes-seedance2](https://github.com/Anil-matcha/n8n-nodes-seedance2) — Automate related Seedance generation workflows in n8n.
+- [muapi-comfyui](https://github.com/SamurAIGPT/muapi-comfyui) — Broader ComfyUI nodes for MuAPI’s image, video, and audio catalog.
 
 ## Included nodes
 
