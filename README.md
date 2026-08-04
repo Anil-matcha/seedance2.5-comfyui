@@ -19,6 +19,7 @@ This pack follows the same workflow pattern as `seedance2-comfyui`: add one API 
 - [awesome-seedance-2.5-api-prompts](https://github.com/Anil-matcha/awesome-seedance-2.5-api-prompts) — Curated Seedance 2.5 prompts, camera controls, and API examples.
 - [n8n-nodes-seedance2](https://github.com/Anil-matcha/n8n-nodes-seedance2) — Automate related Seedance generation workflows in n8n.
 - [muapi-comfyui](https://github.com/SamurAIGPT/muapi-comfyui) — Broader ComfyUI nodes for MuAPI’s image, video, and audio catalog.
+- [seedance-2-mcp](https://github.com/Anil-matcha/seedance-2-mcp) — MCP server for generating Seedance 2 videos through MuAPI.
 
 ## Included nodes
 
