@@ -14,6 +14,7 @@ This pack follows the same workflow pattern as `seedance2-comfyui`: add one API 
 
 - [MuAPI ComfyUI integration docs](https://muapi.ai/docs/comfyui) — Integration guidance for running this node pack through MuAPI; create an [access key](https://muapi.ai/access-keys), explore the [Seedance 2.5 landing page](https://muapi.ai/seedance-2.5), or try [Seedance 2.5 text-to-video](https://muapi.ai/playground/seedance-2.5-text-to-video).
 - [Seedance-2.5-API](https://github.com/SamurAIGPT/Seedance-2.5-API) — Python wrapper for the same Seedance 2.5 API.
+- [Seedance-2.5-Spicy-API](https://github.com/Anil-matcha/Seedance-2.5-Spicy-API) — Python SDK and MCP server for the relaxed-moderation Seedance 2.5 Spicy tier.
 - [seedance2-comfyui](https://github.com/Anil-matcha/seedance2-comfyui) — Related Seedance ComfyUI nodes and workflows.
 - [seedance-2.5-mcp](https://github.com/Anil-matcha/seedance-2.5-mcp) — Focused MCP server for driving the 720p and 480p Seedance 2.5 Preview routes.
 - [awesome-seedance-2.5-api-prompts](https://github.com/Anil-matcha/awesome-seedance-2.5-api-prompts) — Curated Seedance 2.5 prompts, camera controls, and API examples.
