@@ -23,6 +23,7 @@ This pack follows the same workflow pattern as `seedance2-comfyui`: add one API 
 - [muapi-comfyui](https://github.com/SamurAIGPT/muapi-comfyui) — Broader ComfyUI nodes for MuAPI’s image, video, and audio catalog.
 - [seedance-2-mcp](https://github.com/Anil-matcha/seedance-2-mcp) — MCP server for generating Seedance 2 videos through MuAPI.
 - [awesome-seedance-motion-control-api](https://github.com/Anil-matcha/awesome-seedance-motion-control-api) — Seedance 2 & 2.5 Motion Control API guide — recast a performance video with new performers while preserving motion, camera, and location
+- [Uncensored AI Video Generator in ComfyUI](https://github.com/Anil-matcha/uncensored-ai-video-generator-comfyui) — guide to running Seedance 2.5 Spicy and the other unrestricted video models in ComfyUI with no GPU.
 
 ## Included nodes
 
